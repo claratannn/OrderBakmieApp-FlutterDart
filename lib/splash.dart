@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/pembayaran.dart';
 
 import 'login.dart';
 import 'main.dart';
 
-class Splash extends StatefulWidget{
+class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
 
   @override
   _SplashState createState() => _SplashState();
 }
 
-class _SplashState extends State<Splash>{
+class _SplashState extends State<Splash> {
   @override
-  void initState(){
+  void initState() {
     super.initState();
     _navigatetohome();
   }
@@ -20,29 +21,27 @@ class _SplashState extends State<Splash>{
   _navigatetohome() async {
     await Future.delayed(Duration(milliseconds: 1500), () {});
     Navigator.pushReplacement(
-      context, 
-      MaterialPageRoute(
-        builder: (context) => LoginPage(title: 'Bakmie Kim-An',)
-      )
-    );
+        context,
+        MaterialPageRoute(
+            builder: (context) => LoginPage(
+                  title: 'Bakmie Kim-An',
+                )));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('images/background.jpg'),
-            fit: BoxFit.cover),
-        ),
-        child: Center(
-          child: Image(image: AssetImage('images/logo.png'),
+        body: Container(
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+            image: AssetImage('images/background.jpg'), fit: BoxFit.cover),
+      ),
+      child: Center(
+        child: Image(
+          image: AssetImage('images/logo.png'),
           width: 300,
-          ),
         ),
-      )
-    );
+      ),
+    ));
   }
-
 }

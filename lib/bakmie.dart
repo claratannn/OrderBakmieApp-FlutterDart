@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application/checkout.dart';
 import 'package:flutter_application/join.dart';
 import 'package:flutter_application/login.dart';
-import 'package:flutter_application/pembayaran.dart';
 import 'login.dart';
 
 class HomePage extends StatefulWidget {
@@ -182,7 +180,7 @@ class _HomePageState extends State<HomePage> {
                                   children: <Widget>[
                                     Container(
                                       child: Image(
-                                        image: AssetImage('images/bakmie.png'),
+                                        image: AssetImage('images/bakmie.jpg'),
                                         width: 80,
                                       ),
                                     ),
@@ -216,7 +214,7 @@ class _HomePageState extends State<HomePage> {
                                   children: <Widget>[
                                     Container(
                                       child: Image(
-                                        image: AssetImage('images/nasi.png'),
+                                        image: AssetImage('images/nasi.jpg'),
                                         width: 80,
                                       ),
                                     ),
@@ -251,7 +249,7 @@ class _HomePageState extends State<HomePage> {
                                     Container(
                                       child: Image(
                                         image:
-                                            AssetImage('images/sidedish.png'),
+                                            AssetImage('images/sidedish.jpg'),
                                         width: 80,
                                       ),
                                     ),
@@ -284,7 +282,7 @@ class _HomePageState extends State<HomePage> {
                                   children: <Widget>[
                                     Container(
                                       child: Image(
-                                        image: AssetImage('images/minum.png'),
+                                        image: AssetImage('images/minum.jpg'),
                                         width: 80,
                                       ),
                                     ),

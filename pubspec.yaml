@@ -70,6 +70,17 @@ flutter:
     - images/nascamhai.jpg
     - images/badak.jpg
     - images/esteh.jpg
+    - images/GoPay.png
+    - images/OVO.png
+    - images/Shopee.png
+    - images/Dana.png
+    - images/sidedish.png
+    - images/bakmie.png
+    - images/nasi.png
+    - images/minum.png
+    - images/bakmiebc.png
+    - images/pangsit.png
+    - images/badak.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

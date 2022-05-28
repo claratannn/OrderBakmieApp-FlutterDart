@@ -2,40 +2,39 @@ import 'package:flutter/material.dart';
 
 import 'home.dart';
 
-class Thanks extends StatefulWidget{
+class Thanks extends StatefulWidget {
   const Thanks({Key? key, required this.title}) : super(key: key);
-  
+
   final String title;
 
   @override
   _ThanksState createState() => _ThanksState();
 }
 
-class _ThanksState extends State<Thanks>{
+class _ThanksState extends State<Thanks> {
   @override
-  void initState(){
+  void initState() {
     super.initState();
     _navigatetohomepage();
   }
 
   _navigatetohomepage() async {
-    await Future.delayed(Duration(milliseconds: 5000), () {});
+    await Future.delayed(Duration(seconds: 5), () {});
     Navigator.pushReplacement(
-      context, 
-      MaterialPageRoute(
-        builder: (context) => HomePage(title: 'Bakmie Kim-An',)
-      )
-    );
+        context,
+        MaterialPageRoute(
+            builder: (context) => HomePage(
+                  title: 'Bakmie Kim-An',
+                )));
   }
 
-     @override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/background.jpg'),
-            fit: BoxFit.cover),
+              image: AssetImage('images/background.jpg'), fit: BoxFit.cover),
         ),
         child: Container(
           margin: EdgeInsets.fromLTRB(30, 270, 30, 270),
@@ -49,7 +48,7 @@ class _ThanksState extends State<Thanks>{
                     'Terima Kasih, \nKami Akan Menghubungi Anda Dalam Waktu 1 x 24 jam',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 14,
+                      fontSize: 17,
                       fontFamily: 'Mulish',
                     ),
                   ),
@@ -61,5 +60,4 @@ class _ThanksState extends State<Thanks>{
       ),
     );
   }
-
 }

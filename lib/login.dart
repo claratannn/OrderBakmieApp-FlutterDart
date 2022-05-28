@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/checkout.dart';
 import 'package:flutter_application/forgotpw.dart';
 import 'package:flutter_application/home.dart';
+import 'package:flutter_application/pembayaran.dart';
 import 'register.dart';
 
 class LoginPage extends StatefulWidget {
@@ -21,8 +23,6 @@ class LoginPage extends StatefulWidget {
   State<LoginPage> createState() => _LoginPageState();
 }
 
-
-
 class _LoginPageState extends State<LoginPage> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
@@ -30,13 +30,12 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('images/background.jpg'),
-            fit: BoxFit.cover),
-        ),
-        child: Padding(
+        body: Container(
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+            image: AssetImage('images/background.jpg'), fit: BoxFit.cover),
+      ),
+      child: Padding(
           padding: const EdgeInsets.fromLTRB(30, 0, 30, 36),
           child: ListView(
             children: <Widget>[
@@ -45,167 +44,155 @@ class _LoginPageState extends State<LoginPage> {
                 padding: const EdgeInsets.all(10),
                 child: const Text(
                   'Sign In',
-                  style: TextStyle(fontSize: 24, color: Colors.white, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: 24,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
                 ),
               ),
-
-                Container(
-                  padding: const EdgeInsets.all(10),
-                  height: 60,
-                  child: TextField(
-                    controller: emailController,
-                    decoration: InputDecoration(
-                        fillColor: Color.fromARGB(255, 246, 246, 246),
-                        filled: true,
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(),
-                        ),
-                        labelText: 'Masukkan Email',
+              Container(
+                padding: const EdgeInsets.all(10),
+                height: 60,
+                child: TextField(
+                  controller: emailController,
+                  decoration: InputDecoration(
+                    fillColor: Color.fromARGB(255, 246, 246, 246),
+                    filled: true,
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(),
                     ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(),
+                    ),
+                    labelText: 'Masukkan Email',
                   ),
                 ),
-
-                Container(
-                  // padding: const EdgeInsets.all(10),
-                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                  height: 50,
-                  child: TextField(
-                    controller: passwordController,
-                    decoration: InputDecoration(
-                        fillColor: Color.fromARGB(255, 246, 246, 246),
-                        filled: true,
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(),
-                        ),
-                        labelText: 'Password',
+              ),
+              Container(
+                // padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                height: 50,
+                child: TextField(
+                  controller: passwordController,
+                  decoration: InputDecoration(
+                    fillColor: Color.fromARGB(255, 246, 246, 246),
+                    filled: true,
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(),
                     ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(),
+                    ),
+                    labelText: 'Password',
                   ),
-
-
                 ),
-
-                TextButton(
-                  onPressed: (){
+              ),
+              TextButton(
+                  onPressed: () {
                     Navigator.pushReplacement(
-                          context, 
-                          MaterialPageRoute(
-                            builder: (context) => ForgotPassword(title: 'Bakmie Kim-An',)
-                          )
-                        );
-                  }, 
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ForgotPassword(
+                                  title: 'Bakmie Kim-An',
+                                )));
+                  },
                   child: Align(
                     alignment: Alignment.bottomRight,
-                    child: const Text('Forgot Password?', 
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0), 
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
-                    )
-                  ),
-                  )
-                ),
-
-                Container(
-                  height: 50,
-                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 63, 186, 126),
-                    ),
-                    child: const Text('LOGIN'),
-                    onPressed: (){
-                      print(emailController.text);
-                      print(passwordController.text);
-                      Navigator.pushReplacement(
-                          context, 
-                          MaterialPageRoute(
-                            builder: (context) => HomePage(title: 'Bakmie Kim-An',)
-                          )
-                        );
-                    },
-                  ),
-                ),
-
-                Row(
-                  children: <Widget>[
-                    const Text(
-                    'Belum punya akun?', 
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 255, 255, 255),),
-                    ),
-                    TextButton(
-                      child: const Text(
-                        'Daftar di sini',
+                    child: const Text('Forgot Password?',
                         style: TextStyle(
-                          fontSize: 14, 
-                          color: Color.fromARGB(255, 0, 0, 0), 
+                          color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.bold,
                           decoration: TextDecoration.underline,
-                        ),
-                      ),
-                      onPressed: (){
-                        Navigator.pushReplacement(
-                          context, 
-                          MaterialPageRoute(
-                            builder: (context) => Register(title: 'Bakmie Kim-An',)
-                          )
-                        );
-                      },
-                    )
-                  ],
-                  mainAxisAlignment: MainAxisAlignment.center,
+                        )),
+                  )),
+              Container(
+                height: 50,
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Color.fromARGB(255, 63, 186, 126),
+                  ),
+                  child: const Text('LOGIN'),
+                  onPressed: () {
+                    print(emailController.text);
+                    print(passwordController.text);
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => HomePage(
+                                  title: 'Bakmie Kim-An',
+                                )));
+                  },
                 ),
-
-                Row(
-                  children: <Widget>[
-                    const Text('ATAU', 
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                  ],
-                  mainAxisAlignment: MainAxisAlignment.center,
-                ),
-
-                Container(
-                    // padding: const EdgeInsets.all(20),
-                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 85),
-                    child: FloatingActionButton.extended(
-                      onPressed: () {},
-                      icon: Image.asset(
-                        'images/google.png',
-                        height: 32,
-                        width: 32,
-                      ),
-                      label: Text('Sign in with Google'),
-                      backgroundColor: Colors.white,
-                      foregroundColor: Colors.black,
+              ),
+              Row(
+                children: <Widget>[
+                  const Text(
+                    'Belum punya akun?',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Color.fromARGB(255, 255, 255, 255),
                     ),
                   ),
-
-                Container(
-                  child: Center(
-                    child: Image(image: AssetImage('images/logo.png'),
-                    width: 190,
+                  TextButton(
+                    child: const Text(
+                      'Daftar di sini',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
+                      ),
                     ),
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Register(
+                                    title: 'Bakmie Kim-An',
+                                  )));
+                    },
                   )
+                ],
+                mainAxisAlignment: MainAxisAlignment.center,
+              ),
+              Row(
+                children: <Widget>[
+                  const Text(
+                    'ATAU',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ],
+                mainAxisAlignment: MainAxisAlignment.center,
+              ),
+              Container(
+                // padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.fromLTRB(20, 20, 20, 85),
+                child: FloatingActionButton.extended(
+                  onPressed: () {},
+                  icon: Image.asset(
+                    'images/google.png',
+                    height: 32,
+                    width: 32,
+                  ),
+                  label: Text('Sign in with Google'),
+                  backgroundColor: Colors.white,
+                  foregroundColor: Colors.black,
                 ),
-                
+              ),
+              Container(
+                  child: Center(
+                child: Image(
+                  image: AssetImage('images/logo.png'),
+                  width: 190,
+                ),
+              )),
             ],
-          )
-          ),
-        )
-
-      );
-
+          )),
+    ));
   }
 }

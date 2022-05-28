@@ -24,8 +24,6 @@ class JoinPage extends StatefulWidget {
   State<JoinPage> createState() => _JoinPageState();
 }
 
-
-
 class _JoinPageState extends State<JoinPage> {
   TextEditingController nameController = TextEditingController();
   TextEditingController phonenumController = TextEditingController();
@@ -34,151 +32,140 @@ class _JoinPageState extends State<JoinPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('images/background.jpg'),
-            fit: BoxFit.cover),
-        ),
-        child: Padding(
+        body: Container(
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+            image: AssetImage('images/background.jpg'), fit: BoxFit.cover),
+      ),
+      child: Padding(
           padding: const EdgeInsets.fromLTRB(30, 0, 30, 36),
           child: ListView(
             children: <Widget>[
               Row(
                 children: <Widget>[
                   IconButton(
-                    icon: Icon(Icons.arrow_back), 
+                    icon: Icon(Icons.arrow_back),
                     color: Colors.white,
-                    onPressed: (){
+                    onPressed: () {
                       Navigator.pushReplacement(
-                            context, 
-                            MaterialPageRoute(
-                              builder: (context) => LoginPage(title: 'Bakmie Kim-An',)
-                            )
-                          );
-                    }, 
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => LoginPage(
+                                    title: 'Bakmie Kim-An',
+                                  )));
+                    },
                   ),
                 ],
               ),
-                
               Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
                 child: const Text(
                   'Bergabung Dengan Kami',
                   style: TextStyle(
-                    fontSize: 24, 
-                    color: Colors.white, 
+                    fontSize: 24,
+                    color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Mulish',
                   ),
                 ),
               ),
-
-                Container(
-                  padding: const EdgeInsets.all(10),
-                  height: 60,
-                  child: TextField(
-                    controller: nameController,
-                    decoration: InputDecoration(
-                        fillColor: Color.fromARGB(255, 246, 246, 246),
-                        filled: true,
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(),
-                        ),
-                        labelText: 'Masukkan Nama',
+              Container(
+                padding: const EdgeInsets.all(10),
+                height: 60,
+                child: TextField(
+                  controller: nameController,
+                  decoration: InputDecoration(
+                    fillColor: Color.fromARGB(255, 246, 246, 246),
+                    filled: true,
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(),
                     ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(),
+                    ),
+                    labelText: 'Masukkan Nama',
+                    labelStyle: TextStyle(fontFamily: 'Mulish', fontSize: 17),
                   ),
                 ),
-
-                Container(
-                  // padding: const EdgeInsets.all(10),
-                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                  height: 50,
-                  child: TextField(
-                    controller: phonenumController,
-                    decoration: InputDecoration(
-                        fillColor: Color.fromARGB(255, 246, 246, 246),
-                        filled: true,
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(),
-                        ),
-                        labelText: 'Masukkan No. Handphone',
+              ),
+              Container(
+                // padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                height: 50,
+                child: TextField(
+                  controller: phonenumController,
+                  decoration: InputDecoration(
+                    fillColor: Color.fromARGB(255, 246, 246, 246),
+                    filled: true,
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(),
                     ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(),
+                    ),
+                    labelText: 'Masukkan No. Handphone',
+                    labelStyle: TextStyle(fontFamily: 'Mulish', fontSize: 17),
                   ),
                 ),
-
-                Container(
-                  // padding: const EdgeInsets.all(10),
-                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                  height: 81,
-                  child: TextField(
-                    controller: addressFranchiseController,
-                    decoration: InputDecoration(
-                        fillColor: Color.fromARGB(255, 246, 246, 246),
-                        filled: true,
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(),
-                        ),
-                        labelText: 'Masukkan Alamat Rencana Franchise',
+              ),
+              Container(
+                // padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                height: 81,
+                child: TextField(
+                  controller: addressFranchiseController,
+                  decoration: InputDecoration(
+                    fillColor: Color.fromARGB(255, 246, 246, 246),
+                    filled: true,
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(),
                     ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(),
+                    ),
+                    labelText: 'Masukkan Alamat Rencana Franchise',
+                    labelStyle: TextStyle(fontFamily: 'Mulish', fontSize: 17),
                   ),
                 ),
-
-                Container(
-                  height: 50,
-                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                  
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 63, 186, 126),
-                    ),
-                    child: const Text('SUBMIT'),
-                    onPressed: (){
-                      print(nameController.text);
-                      print(phonenumController.text);
-                      print(addressFranchiseController.text);
-                      Navigator.pushReplacement(
-                          context, 
-                          MaterialPageRoute(
-                            builder: (context) => Thanks(title: 'Bakmie Kim-An',)
-                          )
-                        );
-                    },
+              ),
+              Container(
+                height: 50,
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Color.fromARGB(255, 63, 186, 126),
                   ),
+                  child: const Text('SUBMIT'),
+                  onPressed: () {
+                    print(nameController.text);
+                    print(phonenumController.text);
+                    print(addressFranchiseController.text);
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Thanks(
+                                  title: 'Bakmie Kim-An',
+                                )));
+                  },
                 ),
-
-                
-                Container(
+              ),
+              Container(
                   margin: EdgeInsets.only(top: 140),
                   child: Center(
-                    child: Image(image: AssetImage('images/logo.png'),
-                    width: 190,
+                    child: Image(
+                      image: AssetImage('images/logo.png'),
+                      width: 190,
                     ),
-                  )
-                ),
-                
+                  )),
             ],
-          )
-          ),
-        )
-
-      );
-
+          )),
+    ));
   }
 }

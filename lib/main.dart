@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/pembayaran.dart';
 import 'package:flutter_application/splash.dart';
 
 void main() {
@@ -31,5 +32,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
