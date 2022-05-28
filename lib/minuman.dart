@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/login.dart';
+import 'package:flutter_application/profile.dart';
 
 class Minuman extends StatefulWidget {
   const Minuman({Key? key, required this.title}) : super(key: key);
@@ -58,27 +59,38 @@ class _MinumanState extends State<Minuman> {
                       Container(
                         child: Column(
                           children: <Widget>[
-                            Container(
-                              height: 41,
-                              width: 41,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                color: Colors.grey,
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.grey.withOpacity(0.5),
-                                    spreadRadius: 1,
-                                    blurRadius: 1,
-                                    offset: Offset(
-                                        0, 3), // changes position of shadow
+                            GestureDetector(
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Profile(
+                                          title: 'Bakmie Kim-An2',
+                                        )),
+                              ),
+                              child: Card(
+                                  elevation: 5.0,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20),
                                   ),
-                                ],
-                              ),
-                              child: Icon(
-                                Icons.person,
-                                color: Color.fromARGB(255, 0, 0, 0),
-                                size: 35,
-                              ),
+                                  color: Colors.grey,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(5.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: <Widget>[
+                                        Container(
+                                          height: 41,
+                                          width: 41,
+                                          child: Icon(
+                                            Icons.person,
+                                            color: Color.fromARGB(255, 0, 0, 0),
+                                            size: 35,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  )),
                             ),
                             GestureDetector(
                               onTap: () => Navigator.push(
