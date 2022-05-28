@@ -66,28 +66,39 @@ class _HomePageState extends State<HomePage> {
                       Container(
                         child: Column(
                           children: <Widget>[
-                            Container(
-                              height: 41,
-                              width: 41,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                color: Colors.grey,
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.grey.withOpacity(0.5),
-                                    spreadRadius: 1,
-                                    blurRadius: 1,
-                                    offset: Offset(
-                                        0, 3), // changes position of shadow
-                                  ),
-                                ],
+                            GestureDetector(
+                              onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginPage(
+                                          title: 'Bakmie Kim-An2',
+                                        )),
                               ),
-                              child: Icon(
-                                Icons.person,
-                                color: Color.fromARGB(255, 0, 0, 0),
-                                size: 35,
+                              child: Container(
+                                height: 41,
+                                width: 41,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(15),
+                                  color: Colors.grey,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey.withOpacity(0.5),
+                                      spreadRadius: 1,
+                                      blurRadius: 1,
+                                      offset: Offset(
+                                          0, 3), // changes position of shadow
+                                    ),
+                                  ],
+                                ),
+                                child: Icon(
+                                  Icons.person,
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  size: 35,
+                                ),
                               ),
+
                             ),
+
                             GestureDetector(
                               onTap: () => Navigator.push(
                                 context,
