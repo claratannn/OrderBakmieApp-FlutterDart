@@ -50,7 +50,7 @@ class _JoinPageState extends State<JoinPage> {
                       Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => LoginPage(
+                              builder: (context) => HomePage(
                                     title: 'Bakmie Kim-An',
                                   )));
                     },

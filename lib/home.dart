@@ -169,7 +169,16 @@ class _HomePageState extends State<HomePage> {
                       margin: EdgeInsets.only(right: 32),
                       child: Column(
                         children: <Widget>[
-                          Card(
+                          GestureDetector(
+                            onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginPage(
+                                          title: 'Bakmie Kim-An2',
+                                        )),
+                              ),
+                              
+                          child: Card(
                               elevation: 5.0,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20),
@@ -189,21 +198,33 @@ class _HomePageState extends State<HomePage> {
                                   ],
                                 ),
                               )),
-                          Text(
-                            'Bakmie',
-                            style: TextStyle(
-                              fontFamily: 'Mulish',
-                              fontSize: 14,
-                            ),
-                          ),
+                           ),
+                           
+                              Text(
+                                'Bakmie',
+                                style: TextStyle(
+                                  fontFamily: 'Mulish',
+                                  fontSize: 14,
+                                ),
+                              ),
+
                         ],
                       ),
                     ),
+
                     Container(
                       margin: EdgeInsets.only(right: 32),
                       child: Column(
                         children: <Widget>[
-                          Card(
+                          GestureDetector(
+                            onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginPage(
+                                          title: 'Bakmie Kim-An2',
+                                        )),
+                              ),
+                          child: Card(
                               elevation: 5.0,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20),
@@ -223,6 +244,7 @@ class _HomePageState extends State<HomePage> {
                                   ],
                                 ),
                               )),
+                          ),
                           Text(
                             'Nasi',
                             style: TextStyle(
@@ -237,7 +259,15 @@ class _HomePageState extends State<HomePage> {
                       margin: EdgeInsets.only(right: 32),
                       child: Column(
                         children: <Widget>[
-                          Card(
+                          GestureDetector(
+                            onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginPage(
+                                          title: 'Bakmie Kim-An2',
+                                        )),
+                              ),
+                              child: Card(
                               elevation: 5.0,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20),
@@ -258,6 +288,7 @@ class _HomePageState extends State<HomePage> {
                                   ],
                                 ),
                               )),
+                          ),
                           Text(
                             'Side Dish',
                             style: TextStyle(
@@ -271,7 +302,15 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       child: Column(
                         children: <Widget>[
-                          Card(
+                          GestureDetector(
+                            onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginPage(
+                                          title: 'Bakmie Kim-An2',
+                                        )),
+                              ),
+                          child: Card(
                               elevation: 5.0,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20),
@@ -291,6 +330,8 @@ class _HomePageState extends State<HomePage> {
                                   ],
                                 ),
                               )),
+
+                          ),
                           Text(
                             'Drink',
                             style: TextStyle(
@@ -321,46 +362,65 @@ class _HomePageState extends State<HomePage> {
                   // This next line does the trick.
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.only(right: 15),
-                      child: Card(
-                        elevation: 5.0,
-                        color: Color.fromARGB(255, 255, 255, 255),
-                        child: Column(
-                          // crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Container(
-                                  child: Image(
-                                    image: AssetImage('images/mielebarfav.jpg'),
-                                    width: 190,
+                    GestureDetector(
+                      onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginPage(
+                                          title: 'Bakmie Kim-An2',
+                                        )),
+                              ),
+                              child: Padding(
+                                padding: EdgeInsets.only(right: 15),
+                                child: Card(
+                                  elevation: 5.0,
+                                  color: Color.fromARGB(255, 255, 255, 255),
+                                  child: Column(
+                                    // crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: <Widget>[
+                                      Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Container(
+                                            child: Image(
+                                              image: AssetImage('images/mielebarfav.jpg'),
+                                              width: 190,
+                                            ),
+                                          ),
+                                          Text(
+                                            'Bakmie Lebar Casiu',
+                                            style: TextStyle(
+                                              fontFamily: 'Mulish',
+                                              fontSize: 14,
+                                            ),
+                                          ),
+                                          Text(
+                                            'Rp. 40.000',
+                                            style: TextStyle(
+                                              fontFamily: 'Mulish',
+                                              fontSize: 14,
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
                                   ),
                                 ),
-                                Text(
-                                  'Bakmie Lebar Casiu',
-                                  style: TextStyle(
-                                    fontFamily: 'Mulish',
-                                    fontSize: 14,
-                                  ),
-                                ),
-                                Text(
-                                  'Rp. 40.000',
-                                  style: TextStyle(
-                                    fontFamily: 'Mulish',
-                                    fontSize: 14,
-                                    color: Colors.grey,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
+                              ),
+
                     ),
-                    Card(
+
+                    GestureDetector(
+                      onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginPage(
+                                          title: 'Bakmie Kim-An2',
+                                        )),
+                              ),
+                    child: Card(
                       elevation: 5.0,
                       color: Color.fromARGB(255, 255, 255, 255),
                       child: Column(
@@ -396,9 +456,11 @@ class _HomePageState extends State<HomePage> {
                         ],
                       ),
                     ),
+                    ),
                   ],
                 ),
               ),
+
               Container(
                 padding: EdgeInsets.only(bottom: 23),
                 child: Text(
@@ -417,84 +479,107 @@ class _HomePageState extends State<HomePage> {
                   // This next line does the trick.
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.only(right: 15),
-                      child: Card(
-                        elevation: 5.0,
-                        color: Color.fromARGB(255, 255, 255, 255),
-                        child: Column(
-                          // crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                    GestureDetector(
+                      onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginPage(
+                                          title: 'Bakmie Kim-An2',
+                                        )),
+                              ),
+                          child: Padding(
+                            padding: EdgeInsets.only(right: 15),
+                            child: Card(
+                              elevation: 5.0,
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              child: Column(
+                                // crossAxisAlignment: CrossAxisAlignment.center,
+                                children: <Widget>[
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Container(
+                                        child: Image(
+                                          image: AssetImage('images/badak.jpg'),
+                                          width: 190,
+                                        ),
+                                      ),
+                                      Text(
+                                        'Badak',
+                                        style: TextStyle(
+                                          fontFamily: 'Mulish',
+                                          fontSize: 14,
+                                        ),
+                                      ),
+                                      Text(
+                                        'Rp. 15.000',
+                                        style: TextStyle(
+                                          fontFamily: 'Mulish',
+                                          fontSize: 14,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+
+                    ),
+
+
+                    GestureDetector(
+                      onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginPage(
+                                          title: 'Bakmie Kim-An2',
+                                        )),
+                              ),
+                          child: Card(
+                            elevation: 5.0,
+                            color: Color.fromARGB(255, 255, 255, 255),
+                            child: Column(
+                              // crossAxisAlignment: CrossAxisAlignment.center,
                               children: <Widget>[
-                                Container(
-                                  child: Image(
-                                    image: AssetImage('images/badak.jpg'),
-                                    width: 190,
-                                  ),
-                                ),
-                                Text(
-                                  'Badak',
-                                  style: TextStyle(
-                                    fontFamily: 'Mulish',
-                                    fontSize: 14,
-                                  ),
-                                ),
-                                Text(
-                                  'Rp. 15.000',
-                                  style: TextStyle(
-                                    fontFamily: 'Mulish',
-                                    fontSize: 14,
-                                    color: Colors.grey,
-                                  ),
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Container(
+                                      child: Image(
+                                        image: AssetImage('images/esteh.jpg'),
+                                        width: 190,
+                                      ),
+                                    ),
+                                    Text(
+                                      'Es Teh Manis',
+                                      style: TextStyle(
+                                        fontFamily: 'Mulish',
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                    Text(
+                                      'Rp. 16.000',
+                                      style: TextStyle(
+                                        fontFamily: 'Mulish',
+                                        fontSize: 14,
+                                        color: Colors.grey,
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Card(
-                      elevation: 5.0,
-                      color: Color.fromARGB(255, 255, 255, 255),
-                      child: Column(
-                        // crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Container(
-                                child: Image(
-                                  image: AssetImage('images/esteh.jpg'),
-                                  width: 190,
-                                ),
-                              ),
-                              Text(
-                                'Es Teh Manis',
-                                style: TextStyle(
-                                  fontFamily: 'Mulish',
-                                  fontSize: 14,
-                                ),
-                              ),
-                              Text(
-                                'Rp. 16.000',
-                                style: TextStyle(
-                                  fontFamily: 'Mulish',
-                                  fontSize: 14,
-                                  color: Colors.grey,
-                                ),
-                              ),
-                            ],
                           ),
-                        ],
-                      ),
+
                     ),
                   ],
                 ),
               ),
+
               Container(
                 // padding: const EdgeInsets.all(20),
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 25),
