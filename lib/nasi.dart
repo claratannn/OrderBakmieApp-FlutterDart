@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/login.dart';
 
-class Bakmie extends StatefulWidget {
-  const Bakmie({Key? key, required this.title}) : super(key: key);
+class Nasi extends StatefulWidget {
+  const Nasi({Key? key, required this.title}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -16,10 +16,10 @@ class Bakmie extends StatefulWidget {
   final String title;
 
   @override
-  State<Bakmie> createState() => _BakmieState();
+  State<Nasi> createState() => _NasiState();
 }
 
-class _BakmieState extends State<Bakmie> {
+class _NasiState extends State<Nasi> {
   TextEditingController searchController = TextEditingController();
 
   @override
@@ -41,7 +41,7 @@ class _BakmieState extends State<Bakmie> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                             Text(
-                              'Bakmie',
+                              'Nasi',
                               style: TextStyle(
                                 fontFamily: 'Mulish',
                                 fontWeight: FontWeight.bold,
@@ -147,7 +147,7 @@ class _BakmieState extends State<Bakmie> {
                 ),
                 child: Row(children: [
                   Text(
-                    'Bakmie Karet',
+                    'Nasi',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
@@ -178,7 +178,7 @@ class _BakmieState extends State<Bakmie> {
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Image(
-                            image: AssetImage('images/cincang.jpg'),
+                            image: AssetImage('images/nasicampur.png'),
                             width: 90,
                             height: 90,
                             fit: BoxFit.fill,
@@ -186,9 +186,9 @@ class _BakmieState extends State<Bakmie> {
                         ),
                         Column(children: <Widget>[
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 30, 10, 10),
+                            margin: EdgeInsets.fromLTRB(0, 30, 105, 10),
                             child: Text(
-                              'Bakmie Karet Babi Cincang',
+                              'Nasi Campur',
                               style: TextStyle(
                                 fontFamily: 'Mulish',
                                 fontWeight: FontWeight.bold,
@@ -197,9 +197,9 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            margin: EdgeInsets.fromLTRB(10, 0, 10, 10),
                             child: Text(
-                              'Bakmie Karet Kenyal Dengan\nIsian Toping Babi Cincang\nKecap',
+                              'Nasi Dengan Isi Toping\nBabi Casiu, Cincang, Panggang,\nAyam Kampung',
                               style: TextStyle(
                                 fontFamily: 'Mulish',
                                 fontSize: 12,
@@ -207,9 +207,9 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 95, 10),
+                            margin: EdgeInsets.fromLTRB(0, 0, 110, 10),
                             child: Text(
-                              'Rp 40.000,-',
+                              'Rp 55.000,-',
                               style: TextStyle(
                                   fontFamily: 'Mulish',
                                   fontSize: 12,
@@ -265,7 +265,7 @@ class _BakmieState extends State<Bakmie> {
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Image(
-                            image: AssetImage('images/casiu.jpg'),
+                            image: AssetImage('images/nasicampur.png'),
                             width: 90,
                             height: 90,
                             fit: BoxFit.fill,
@@ -273,9 +273,9 @@ class _BakmieState extends State<Bakmie> {
                         ),
                         Column(children: <Widget>[
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 30, 25, 10),
+                            margin: EdgeInsets.fromLTRB(0, 30, 85, 10),
                             child: Text(
-                              'Bakmie Karet Babi Casiu',
+                              'Hainam Campur',
                               style: TextStyle(
                                 fontFamily: 'Mulish',
                                 fontWeight: FontWeight.bold,
@@ -284,9 +284,9 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            margin: EdgeInsets.fromLTRB(10, 0, 10, 10),
                             child: Text(
-                              'Bakmie Karet Kenyal Dengan\nIsian Toping Casiu',
+                              'Nasi Dengan Isi Toping\nBabi Casiu, Cincang, Panggang,\nAyam Kampung',
                               style: TextStyle(
                                 fontFamily: 'Mulish',
                                 fontSize: 12,
@@ -294,9 +294,9 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 95, 10),
+                            margin: EdgeInsets.fromLTRB(0, 0, 110, 10),
                             child: Text(
-                              'Rp 40.000,-',
+                              'Rp 60.000,-',
                               style: TextStyle(
                                   fontFamily: 'Mulish',
                                   fontSize: 12,
@@ -352,7 +352,7 @@ class _BakmieState extends State<Bakmie> {
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Image(
-                            image: AssetImage('images/rica.jpg'),
+                            image: AssetImage('images/nasiputih.png'),
                             width: 90,
                             height: 90,
                             fit: BoxFit.fill,
@@ -360,9 +360,9 @@ class _BakmieState extends State<Bakmie> {
                         ),
                         Column(children: <Widget>[
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 30, 0, 10),
+                            margin: EdgeInsets.fromLTRB(10, 30, 120, 10),
                             child: Text(
-                              'Bakmie Karet Babi Rica-Rica',
+                              'Nasi Putih',
                               style: TextStyle(
                                 fontFamily: 'Mulish',
                                 fontWeight: FontWeight.bold,
@@ -371,9 +371,9 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            margin: EdgeInsets.fromLTRB(10, 0, 120, 10),
                             child: Text(
-                              'Bakmie Karet Kenyal Dengan\nIsian Toping Babi Rica Rica',
+                              'Nasi Putih',
                               style: TextStyle(
                                 fontFamily: 'Mulish',
                                 fontSize: 12,
@@ -381,119 +381,9 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 95, 10),
+                            margin: EdgeInsets.fromLTRB(10, 0, 120, 10),
                             child: Text(
-                              'Rp 40.000,-',
-                              style: TextStyle(
-                                  fontFamily: 'Mulish',
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(100, 0, 0, 10),
-                            child: Row(
-                              children: [
-                                Container(
-                                  padding: EdgeInsets.only(
-                                      top: 1, bottom: 1, left: 1, right: 1),
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
-                                      color:
-                                          Color.fromARGB(255, 231, 231, 231)),
-                                  child: Row(
-                                    children: <Widget>[
-                                      Icon(
-                                        Icons.remove,
-                                      ),
-                                      Text(
-                                        '   0   ',
-                                      ),
-                                      Icon(Icons.add)
-                                    ],
-                                  ),
-                                )
-                              ],
-                            ),
-                          )
-                        ])
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 40,
-              ),
-              Container(
-                margin: EdgeInsets.only(
-                  left: 20,
-                ),
-                child: Row(children: [
-                  Text(
-                    'Bakmie Lebar',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
-                  )
-                ]),
-              ),
-              const Divider(
-                thickness: 1,
-                indent: 5,
-                endIndent: 5,
-                color: Colors.black,
-              ),
-              Card(
-                // elevation: 5.0,
-                // shape: RoundedRectangleBorder(
-                //   borderRadius: BorderRadius.circular(20),
-                // ),
-                color: Color.fromARGB(255, 255, 255, 255),
-                child: Row(
-                  // crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Row(
-                      children: <Widget>[
-                        Card(
-                          margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                          child: Image(
-                            image: AssetImage('images/cincang.jpg'),
-                            width: 90,
-                            height: 90,
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                        Column(children: <Widget>[
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 30, 10, 10),
-                            child: Text(
-                              'Bakmie Lebar Babi Cincang',
-                              style: TextStyle(
-                                fontFamily: 'Mulish',
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                            child: Text(
-                              'Bakmie Lebar Kenyal Dengan\nIsian Toping Babi Cincang\nKecap',
-                              style: TextStyle(
-                                fontFamily: 'Mulish',
-                                fontSize: 12,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 95, 10),
-                            child: Text(
-                              'Rp 40.000,-',
+                              'Rp 5.000,-',
                               style: TextStyle(
                                   fontFamily: 'Mulish',
                                   fontSize: 12,
@@ -549,7 +439,7 @@ class _BakmieState extends State<Bakmie> {
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Image(
-                            image: AssetImage('images/casiu.jpg'),
+                            image: AssetImage('images/nasihainan.png'),
                             width: 90,
                             height: 90,
                             fit: BoxFit.fill,
@@ -557,9 +447,9 @@ class _BakmieState extends State<Bakmie> {
                         ),
                         Column(children: <Widget>[
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 30, 25, 10),
+                            margin: EdgeInsets.fromLTRB(10, 30, 120, 10),
                             child: Text(
-                              'Bakmie Lebar Babi Casiu',
+                              'Nasi Hainam',
                               style: TextStyle(
                                 fontFamily: 'Mulish',
                                 fontWeight: FontWeight.bold,
@@ -568,9 +458,9 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            margin: EdgeInsets.fromLTRB(10, 0, 120, 10),
                             child: Text(
-                              'Bakmie Lebar Kenyal Dengan\nIsian Toping Casiu',
+                              'Nasi Hainam',
                               style: TextStyle(
                                 fontFamily: 'Mulish',
                                 fontSize: 12,
@@ -578,9 +468,9 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 95, 10),
+                            margin: EdgeInsets.fromLTRB(0, 0, 125, 10),
                             child: Text(
-                              'Rp 40.000,-',
+                              'Rp 5.000,-',
                               style: TextStyle(
                                   fontFamily: 'Mulish',
                                   fontSize: 12,
@@ -588,94 +478,7 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(100, 0, 0, 10),
-                            child: Row(
-                              children: [
-                                Container(
-                                  padding: EdgeInsets.only(
-                                      top: 1, bottom: 1, left: 1, right: 1),
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
-                                      color:
-                                          Color.fromARGB(255, 231, 231, 231)),
-                                  child: Row(
-                                    children: <Widget>[
-                                      Icon(
-                                        Icons.remove,
-                                      ),
-                                      Text(
-                                        '   0   ',
-                                      ),
-                                      Icon(Icons.add)
-                                    ],
-                                  ),
-                                )
-                              ],
-                            ),
-                          )
-                        ])
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                // elevation: 5.0,
-                // shape: RoundedRectangleBorder(
-                //   borderRadius: BorderRadius.circular(20),
-                // ),
-                color: Color.fromARGB(255, 255, 255, 255),
-                child: Row(
-                  // crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Row(
-                      children: <Widget>[
-                        Card(
-                          margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                          child: Image(
-                            image: AssetImage('images/rica.jpg'),
-                            width: 90,
-                            height: 90,
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                        Column(children: <Widget>[
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 30, 0, 10),
-                            child: Text(
-                              'Bakmie Lebar Babi Rica-Rica',
-                              style: TextStyle(
-                                fontFamily: 'Mulish',
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                            child: Text(
-                              'Bakmie Lebar Kenyal Dengan\nIsian Toping Babi Rica Rica',
-                              style: TextStyle(
-                                fontFamily: 'Mulish',
-                                fontSize: 12,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(0, 0, 95, 10),
-                            child: Text(
-                              'Rp 40.000,-',
-                              style: TextStyle(
-                                  fontFamily: 'Mulish',
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(100, 0, 0, 10),
+                            margin: EdgeInsets.fromLTRB(80, 0, 0, 10),
                             child: Row(
                               children: [
                                 Container(

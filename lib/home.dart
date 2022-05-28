@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/bakmie.dart';
 import 'package:flutter_application/checkout.dart';
 import 'package:flutter_application/join.dart';
 import 'package:flutter_application/login.dart';
+import 'package:flutter_application/minuman.dart';
+import 'package:flutter_application/nasi.dart';
 import 'package:flutter_application/pembayaran.dart';
+import 'package:flutter_application/sidedish.dart';
 import 'login.dart';
 
 class HomePage extends StatefulWidget {
@@ -169,26 +173,37 @@ class _HomePageState extends State<HomePage> {
                       margin: EdgeInsets.only(right: 32),
                       child: Column(
                         children: <Widget>[
-                          Card(
-                              elevation: 5.0,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              color: Color.fromARGB(255, 255, 255, 255),
-                              child: Padding(
-                                padding: EdgeInsets.all(5.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: <Widget>[
-                                    Container(
-                                      child: Image(
-                                        image: AssetImage('images/bakmie.png'),
-                                        width: 80,
-                                      ),
-                                    ),
-                                  ],
+                          GestureDetector(
+                            onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Bakmie(
+                                        title: 'Bakmie Kim-An2',
+                                      )),
+                            ),
+                            child: Card(
+                                elevation: 5.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
                                 ),
-                              )),
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                child: Padding(
+                                  padding: EdgeInsets.all(5.0),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: <Widget>[
+                                      Container(
+                                        child: Image(
+                                          image:
+                                              AssetImage('images/bakmie.png'),
+                                          width: 80,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                )),
+                          ),
                           Text(
                             'Bakmie',
                             style: TextStyle(
@@ -203,26 +218,36 @@ class _HomePageState extends State<HomePage> {
                       margin: EdgeInsets.only(right: 32),
                       child: Column(
                         children: <Widget>[
-                          Card(
-                              elevation: 5.0,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              color: Color.fromARGB(255, 255, 255, 255),
-                              child: Padding(
-                                padding: EdgeInsets.all(5.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: <Widget>[
-                                    Container(
-                                      child: Image(
-                                        image: AssetImage('images/nasi.png'),
-                                        width: 80,
-                                      ),
-                                    ),
-                                  ],
+                          GestureDetector(
+                            onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Nasi(
+                                        title: 'Bakmie Kim-An2',
+                                      )),
+                            ),
+                            child: Card(
+                                elevation: 5.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
                                 ),
-                              )),
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                child: Padding(
+                                  padding: EdgeInsets.all(5.0),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: <Widget>[
+                                      Container(
+                                        child: Image(
+                                          image: AssetImage('images/nasi.png'),
+                                          width: 80,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                )),
+                          ),
                           Text(
                             'Nasi',
                             style: TextStyle(
@@ -237,27 +262,37 @@ class _HomePageState extends State<HomePage> {
                       margin: EdgeInsets.only(right: 32),
                       child: Column(
                         children: <Widget>[
-                          Card(
-                              elevation: 5.0,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              color: Color.fromARGB(255, 255, 255, 255),
-                              child: Padding(
-                                padding: EdgeInsets.all(5.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: <Widget>[
-                                    Container(
-                                      child: Image(
-                                        image:
-                                            AssetImage('images/sidedish.png'),
-                                        width: 80,
-                                      ),
-                                    ),
-                                  ],
+                          GestureDetector(
+                            onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SideDish(
+                                        title: 'Bakmie Kim-An2',
+                                      )),
+                            ),
+                            child: Card(
+                                elevation: 5.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
                                 ),
-                              )),
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                child: Padding(
+                                  padding: EdgeInsets.all(5.0),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: <Widget>[
+                                      Container(
+                                        child: Image(
+                                          image:
+                                              AssetImage('images/sidedish.png'),
+                                          width: 80,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                )),
+                          ),
                           Text(
                             'Side Dish',
                             style: TextStyle(
@@ -271,26 +306,36 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       child: Column(
                         children: <Widget>[
-                          Card(
-                              elevation: 5.0,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              color: Color.fromARGB(255, 255, 255, 255),
-                              child: Padding(
-                                padding: EdgeInsets.all(5.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: <Widget>[
-                                    Container(
-                                      child: Image(
-                                        image: AssetImage('images/minum.png'),
-                                        width: 80,
-                                      ),
-                                    ),
-                                  ],
+                          GestureDetector(
+                            onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Minuman(
+                                        title: 'Bakmie Kim-An2',
+                                      )),
+                            ),
+                            child: Card(
+                                elevation: 5.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
                                 ),
-                              )),
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                child: Padding(
+                                  padding: EdgeInsets.all(5.0),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: <Widget>[
+                                      Container(
+                                        child: Image(
+                                          image: AssetImage('images/minum.png'),
+                                          width: 80,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                )),
+                          ),
                           Text(
                             'Drink',
                             style: TextStyle(
@@ -321,8 +366,63 @@ class _HomePageState extends State<HomePage> {
                   // This next line does the trick.
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.only(right: 15),
+                    GestureDetector(
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Bakmie(
+                                  title: 'Bakmie Kim-An2',
+                                )),
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.only(right: 15),
+                        child: Card(
+                          elevation: 5.0,
+                          color: Color.fromARGB(255, 255, 255, 255),
+                          child: Column(
+                            // crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Container(
+                                    child: Image(
+                                      image:
+                                          AssetImage('images/mielebarfav.jpg'),
+                                      width: 190,
+                                    ),
+                                  ),
+                                  Text(
+                                    'Bakmie Lebar Casiu',
+                                    style: TextStyle(
+                                      fontFamily: 'Mulish',
+                                      fontSize: 14,
+                                    ),
+                                  ),
+                                  Text(
+                                    'Rp. 40.000',
+                                    style: TextStyle(
+                                      fontFamily: 'Mulish',
+                                      fontSize: 14,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Nasi(
+                                  title: 'Bakmie Kim-An2',
+                                )),
+                      ),
                       child: Card(
                         elevation: 5.0,
                         color: Color.fromARGB(255, 255, 255, 255),
@@ -335,19 +435,19 @@ class _HomePageState extends State<HomePage> {
                               children: <Widget>[
                                 Container(
                                   child: Image(
-                                    image: AssetImage('images/mielebarfav.jpg'),
+                                    image: AssetImage('images/nascamhai.jpg'),
                                     width: 190,
                                   ),
                                 ),
                                 Text(
-                                  'Bakmie Lebar Casiu',
+                                  'Nasi Campur Hainam',
                                   style: TextStyle(
                                     fontFamily: 'Mulish',
                                     fontSize: 14,
                                   ),
                                 ),
                                 Text(
-                                  'Rp. 40.000',
+                                  'Rp. 55.000',
                                   style: TextStyle(
                                     fontFamily: 'Mulish',
                                     fontSize: 14,
@@ -358,42 +458,6 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ],
                         ),
-                      ),
-                    ),
-                    Card(
-                      elevation: 5.0,
-                      color: Color.fromARGB(255, 255, 255, 255),
-                      child: Column(
-                        // crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Container(
-                                child: Image(
-                                  image: AssetImage('images/nascamhai.jpg'),
-                                  width: 190,
-                                ),
-                              ),
-                              Text(
-                                'Nasi Campur Hainam',
-                                style: TextStyle(
-                                  fontFamily: 'Mulish',
-                                  fontSize: 14,
-                                ),
-                              ),
-                              Text(
-                                'Rp. 55.000',
-                                style: TextStyle(
-                                  fontFamily: 'Mulish',
-                                  fontSize: 14,
-                                  color: Colors.grey,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
                       ),
                     ),
                   ],
@@ -417,8 +481,62 @@ class _HomePageState extends State<HomePage> {
                   // This next line does the trick.
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.only(right: 15),
+                    GestureDetector(
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Minuman(
+                                  title: 'Bakmie Kim-An2',
+                                )),
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.only(right: 15),
+                        child: Card(
+                          elevation: 5.0,
+                          color: Color.fromARGB(255, 255, 255, 255),
+                          child: Column(
+                            // crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Container(
+                                    child: Image(
+                                      image: AssetImage('images/badak.jpg'),
+                                      width: 190,
+                                    ),
+                                  ),
+                                  Text(
+                                    'Badak',
+                                    style: TextStyle(
+                                      fontFamily: 'Mulish',
+                                      fontSize: 14,
+                                    ),
+                                  ),
+                                  Text(
+                                    'Rp. 15.000',
+                                    style: TextStyle(
+                                      fontFamily: 'Mulish',
+                                      fontSize: 14,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Minuman(
+                                  title: 'Bakmie Kim-An2',
+                                )),
+                      ),
                       child: Card(
                         elevation: 5.0,
                         color: Color.fromARGB(255, 255, 255, 255),
@@ -431,19 +549,19 @@ class _HomePageState extends State<HomePage> {
                               children: <Widget>[
                                 Container(
                                   child: Image(
-                                    image: AssetImage('images/badak.jpg'),
+                                    image: AssetImage('images/esteh.jpg'),
                                     width: 190,
                                   ),
                                 ),
                                 Text(
-                                  'Badak',
+                                  'Es Teh Manis',
                                   style: TextStyle(
                                     fontFamily: 'Mulish',
                                     fontSize: 14,
                                   ),
                                 ),
                                 Text(
-                                  'Rp. 15.000',
+                                  'Rp. 16.000',
                                   style: TextStyle(
                                     fontFamily: 'Mulish',
                                     fontSize: 14,
@@ -454,42 +572,6 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ],
                         ),
-                      ),
-                    ),
-                    Card(
-                      elevation: 5.0,
-                      color: Color.fromARGB(255, 255, 255, 255),
-                      child: Column(
-                        // crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Container(
-                                child: Image(
-                                  image: AssetImage('images/esteh.jpg'),
-                                  width: 190,
-                                ),
-                              ),
-                              Text(
-                                'Es Teh Manis',
-                                style: TextStyle(
-                                  fontFamily: 'Mulish',
-                                  fontSize: 14,
-                                ),
-                              ),
-                              Text(
-                                'Rp. 16.000',
-                                style: TextStyle(
-                                  fontFamily: 'Mulish',
-                                  fontSize: 14,
-                                  color: Colors.grey,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
                       ),
                     ),
                   ],

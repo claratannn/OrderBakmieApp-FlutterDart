@@ -81,7 +81,19 @@ flutter:
     - images/bakmiebc.png
     - images/pangsit.png
     - images/badak.png
-
+    - images/badakminum.jpg
+    - images/esjeruk.jpg
+    - images/esteh.png
+    - images/teh.jpg
+    - images/nasiputih.png
+    - images/nasihainan.png
+    - images/cincang.jpg
+    - images/casiu.jpg
+    - images/rica.jpg    
+    - images/pangsitk.png
+    - images/pangsitg.png
+    - images/bakso.png
+    - images/nasicampur.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
