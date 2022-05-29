@@ -110,6 +110,7 @@ class _ProfileState extends State<Profile> {
                       ),
                       labelText: 'Willy',
                       labelStyle: TextStyle(fontFamily: 'Mulish', fontSize: 14),
+                      floatingLabelBehavior: FloatingLabelBehavior.never,
                     ),
                   ),
                 ),
@@ -144,6 +145,7 @@ class _ProfileState extends State<Profile> {
                       ),
                       labelText: '1234-5678-910',
                       labelStyle: TextStyle(fontFamily: 'Mulish', fontSize: 14),
+                      floatingLabelBehavior: FloatingLabelBehavior.never,
                     ),
                   ),
                 ),
@@ -179,6 +181,7 @@ class _ProfileState extends State<Profile> {
                       labelText:
                           'Jl. Rumah Willy No. 69 RT. 666 RW.\n777, Rumahku, Rumahnya, 12345.',
                       labelStyle: TextStyle(fontFamily: 'Mulish', fontSize: 14),
+                      floatingLabelBehavior: FloatingLabelBehavior.never,
                     ),
                   ),
                 ),

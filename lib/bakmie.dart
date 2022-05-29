@@ -233,8 +233,7 @@ class _BakmieState extends State<Bakmie> {
                             child: Row(
                               children: [
                                 Container(
-                                  padding: EdgeInsets.only(
-                                      top: 1, bottom: 1, left: 1, right: 1),
+                                  padding: EdgeInsets.only(top: 1, bottom: 1, left: 1, right: 1),
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(20),
                                       color:

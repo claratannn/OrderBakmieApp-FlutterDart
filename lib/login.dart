@@ -27,6 +27,14 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
+  bool _isHidePassword = true;
+  
+  void _togglePasswordVisibility(){
+    setState(() {
+      _isHidePassword = !_isHidePassword;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,15 +75,18 @@ class _LoginPageState extends State<LoginPage> {
                       borderSide: BorderSide(),
                     ),
                     labelText: 'Masukkan Email',
+                    floatingLabelBehavior: FloatingLabelBehavior.never,
                   ),
                 ),
               ),
+
               Container(
                 // padding: const EdgeInsets.all(10),
                 padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
                 height: 50,
                 child: TextField(
                   controller: passwordController,
+                  obscureText: _isHidePassword,
                   decoration: InputDecoration(
                     fillColor: Color.fromARGB(255, 246, 246, 246),
                     filled: true,
@@ -87,10 +98,22 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.circular(10),
                       borderSide: BorderSide(),
                     ),
+                    suffixIcon: GestureDetector(
+                      onTap: (){
+                        _togglePasswordVisibility();
+                      },
+                      child: Icon(
+                        _isHidePassword ? Icons.visibility_off : Icons.visibility,
+                        color: _isHidePassword ? Colors.grey : Colors.blue,
+                      ),
+                    ),
+                    isDense: true,
                     labelText: 'Password',
+                    floatingLabelBehavior: FloatingLabelBehavior.never,
                   ),
                 ),
               ),
+
               TextButton(
                   onPressed: () {
                     Navigator.pushReplacement(
@@ -108,7 +131,8 @@ class _LoginPageState extends State<LoginPage> {
                           fontWeight: FontWeight.bold,
                           decoration: TextDecoration.underline,
                         )),
-                  )),
+                  )
+              ),
               Container(
                 height: 50,
                 padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
