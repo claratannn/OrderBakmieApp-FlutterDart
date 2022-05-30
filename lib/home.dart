@@ -8,7 +8,6 @@ import 'package:flutter_application/nasi.dart';
 import 'package:flutter_application/pembayaran.dart';
 import 'package:flutter_application/profile.dart';
 import 'package:flutter_application/sidedish.dart';
-import 'package:flutter_application/testing.dart';
 import 'login.dart';
 
 class HomePage extends StatefulWidget {
