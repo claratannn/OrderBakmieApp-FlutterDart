@@ -32,9 +32,9 @@ class _MinumanState extends State<Minuman> {
         onPressed: () {
           // Add your onPressed code here!
           Navigator.push(
-            context, 
-            MaterialPageRoute(builder: (context) => Checkout(title: 'Bakmie Kim-An'))
-            );
+              context,
+              MaterialPageRoute(
+                  builder: (context) => Checkout(title: 'Bakmie Kim-An')));
         },
         backgroundColor: Colors.green,
         child: const Icon(Icons.shopping_cart),
@@ -66,7 +66,7 @@ class _MinumanState extends State<Minuman> {
                       Container(
                         width: 100.0,
                         height: 59.0,
-                        alignment: Alignment(5, 27),
+                        alignment: Alignment(4, 27),
                         child: new Image.asset('images/logo.png'),
                       ),
                       Container(
