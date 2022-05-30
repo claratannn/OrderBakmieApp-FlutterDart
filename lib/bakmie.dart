@@ -25,6 +25,14 @@ class Bakmie extends StatefulWidget {
 class _BakmieState extends State<Bakmie> {
   TextEditingController searchController = TextEditingController();
 
+  //jumlah
+  int jumlah = 0;
+  int jumlah2 = 0;
+  int jumlah3 = 0;
+  int jumlah4 = 0;
+  int jumlah5 = 0;
+  int jumlah6 = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,9 +40,9 @@ class _BakmieState extends State<Bakmie> {
         onPressed: () {
           // Add your onPressed code here!
           Navigator.push(
-            context, 
-            MaterialPageRoute(builder: (context) => Checkout(title: 'Bakmie Kim-An'))
-            );
+              context,
+              MaterialPageRoute(
+                  builder: (context) => Checkout(title: 'Bakmie Kim-An')));
         },
         backgroundColor: Colors.green,
         child: const Icon(Icons.shopping_cart),
@@ -242,24 +250,61 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(100, 0, 0, 10),
+                            margin: EdgeInsets.fromLTRB(50, 0, 0, 10),
                             child: Row(
                               children: [
                                 Container(
-                                  padding: EdgeInsets.only(top: 1, bottom: 1, left: 1, right: 1),
+                                  padding: EdgeInsets.only(
+                                      top: 1, bottom: 1, left: 1, right: 1),
                                   decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
+                                      borderRadius: BorderRadius.circular(1),
                                       color:
-                                          Color.fromARGB(255, 231, 231, 231)),
+                                          Color.fromARGB(255, 255, 255, 255)),
                                   child: Row(
-                                    children: <Widget>[
-                                      Icon(
-                                        Icons.remove,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      ElevatedButton(
+                                        child: Icon(Icons.remove),
+                                        onPressed: () {
+                                          setState(() {
+                                            if (jumlah > 0) {
+                                              jumlah--;
+                                            }
+                                          });
+                                        },
+                                        style: ElevatedButton.styleFrom(
+                                          shape: CircleBorder(),
+                                          padding: EdgeInsets.all(1),
+                                          primary: Color.fromARGB(255, 230, 230,
+                                              230), // <-- Button color
+                                          onPrimary: Color.fromARGB(
+                                              255, 0, 0, 0), // <-- Splash color
+                                        ),
                                       ),
                                       Text(
-                                        '   0   ',
+                                        jumlah.toString(),
+                                        style: const TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w900,
+                                        ),
                                       ),
-                                      Icon(Icons.add)
+                                      const SizedBox(width: 1),
+                                      ElevatedButton(
+                                        child: Icon(Icons.add),
+                                        onPressed: () {
+                                          setState(() {
+                                            jumlah++;
+                                          });
+                                        },
+                                        style: ElevatedButton.styleFrom(
+                                          shape: CircleBorder(),
+                                          padding: EdgeInsets.all(1),
+                                          primary: Color.fromARGB(255, 230, 230,
+                                              230), // <-- Button color
+                                          onPrimary: Color.fromARGB(
+                                              255, 0, 0, 0), // <-- Splash color
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 )
@@ -328,25 +373,61 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(100, 0, 0, 10),
+                            margin: EdgeInsets.fromLTRB(50, 0, 0, 10),
                             child: Row(
                               children: [
                                 Container(
                                   padding: EdgeInsets.only(
                                       top: 1, bottom: 1, left: 1, right: 1),
                                   decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
+                                      borderRadius: BorderRadius.circular(1),
                                       color:
-                                          Color.fromARGB(255, 231, 231, 231)),
+                                          Color.fromARGB(255, 255, 255, 255)),
                                   child: Row(
-                                    children: <Widget>[
-                                      Icon(
-                                        Icons.remove,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      ElevatedButton(
+                                        child: Icon(Icons.remove),
+                                        onPressed: () {
+                                          setState(() {
+                                            if (jumlah2 > 0) {
+                                              jumlah2--;
+                                            }
+                                          });
+                                        },
+                                        style: ElevatedButton.styleFrom(
+                                          shape: CircleBorder(),
+                                          padding: EdgeInsets.all(1),
+                                          primary: Color.fromARGB(255, 230, 230,
+                                              230), // <-- Button color
+                                          onPrimary: Color.fromARGB(
+                                              255, 0, 0, 0), // <-- Splash color
+                                        ),
                                       ),
                                       Text(
-                                        '   0   ',
+                                        jumlah2.toString(),
+                                        style: const TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w900,
+                                        ),
                                       ),
-                                      Icon(Icons.add)
+                                      const SizedBox(width: 1),
+                                      ElevatedButton(
+                                        child: Icon(Icons.add),
+                                        onPressed: () {
+                                          setState(() {
+                                            jumlah2++;
+                                          });
+                                        },
+                                        style: ElevatedButton.styleFrom(
+                                          shape: CircleBorder(),
+                                          padding: EdgeInsets.all(1),
+                                          primary: Color.fromARGB(255, 230, 230,
+                                              230), // <-- Button color
+                                          onPrimary: Color.fromARGB(
+                                              255, 0, 0, 0), // <-- Splash color
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 )
@@ -415,25 +496,61 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(100, 0, 0, 10),
+                            margin: EdgeInsets.fromLTRB(50, 0, 0, 10),
                             child: Row(
                               children: [
                                 Container(
                                   padding: EdgeInsets.only(
                                       top: 1, bottom: 1, left: 1, right: 1),
                                   decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
+                                      borderRadius: BorderRadius.circular(1),
                                       color:
-                                          Color.fromARGB(255, 231, 231, 231)),
+                                          Color.fromARGB(255, 255, 255, 255)),
                                   child: Row(
-                                    children: <Widget>[
-                                      Icon(
-                                        Icons.remove,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      ElevatedButton(
+                                        child: Icon(Icons.remove),
+                                        onPressed: () {
+                                          setState(() {
+                                            if (jumlah3 > 0) {
+                                              jumlah3--;
+                                            }
+                                          });
+                                        },
+                                        style: ElevatedButton.styleFrom(
+                                          shape: CircleBorder(),
+                                          padding: EdgeInsets.all(1),
+                                          primary: Color.fromARGB(255, 230, 230,
+                                              230), // <-- Button color
+                                          onPrimary: Color.fromARGB(
+                                              255, 0, 0, 0), // <-- Splash color
+                                        ),
                                       ),
                                       Text(
-                                        '   0   ',
+                                        jumlah3.toString(),
+                                        style: const TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w900,
+                                        ),
                                       ),
-                                      Icon(Icons.add)
+                                      const SizedBox(width: 1),
+                                      ElevatedButton(
+                                        child: Icon(Icons.add),
+                                        onPressed: () {
+                                          setState(() {
+                                            jumlah3++;
+                                          });
+                                        },
+                                        style: ElevatedButton.styleFrom(
+                                          shape: CircleBorder(),
+                                          padding: EdgeInsets.all(1),
+                                          primary: Color.fromARGB(255, 230, 230,
+                                              230), // <-- Button color
+                                          onPrimary: Color.fromARGB(
+                                              255, 0, 0, 0), // <-- Splash color
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 )
@@ -525,25 +642,61 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(100, 0, 0, 10),
+                            margin: EdgeInsets.fromLTRB(50, 0, 0, 10),
                             child: Row(
                               children: [
                                 Container(
                                   padding: EdgeInsets.only(
                                       top: 1, bottom: 1, left: 1, right: 1),
                                   decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
+                                      borderRadius: BorderRadius.circular(1),
                                       color:
-                                          Color.fromARGB(255, 231, 231, 231)),
+                                          Color.fromARGB(255, 255, 255, 255)),
                                   child: Row(
-                                    children: <Widget>[
-                                      Icon(
-                                        Icons.remove,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      ElevatedButton(
+                                        child: Icon(Icons.remove),
+                                        onPressed: () {
+                                          setState(() {
+                                            if (jumlah4 > 0) {
+                                              jumlah4--;
+                                            }
+                                          });
+                                        },
+                                        style: ElevatedButton.styleFrom(
+                                          shape: CircleBorder(),
+                                          padding: EdgeInsets.all(1),
+                                          primary: Color.fromARGB(255, 230, 230,
+                                              230), // <-- Button color
+                                          onPrimary: Color.fromARGB(
+                                              255, 0, 0, 0), // <-- Splash color
+                                        ),
                                       ),
                                       Text(
-                                        '   0   ',
+                                        jumlah4.toString(),
+                                        style: const TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w900,
+                                        ),
                                       ),
-                                      Icon(Icons.add)
+                                      const SizedBox(width: 1),
+                                      ElevatedButton(
+                                        child: Icon(Icons.add),
+                                        onPressed: () {
+                                          setState(() {
+                                            jumlah4++;
+                                          });
+                                        },
+                                        style: ElevatedButton.styleFrom(
+                                          shape: CircleBorder(),
+                                          padding: EdgeInsets.all(1),
+                                          primary: Color.fromARGB(255, 230, 230,
+                                              230), // <-- Button color
+                                          onPrimary: Color.fromARGB(
+                                              255, 0, 0, 0), // <-- Splash color
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 )
@@ -612,25 +765,61 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(100, 0, 0, 10),
+                            margin: EdgeInsets.fromLTRB(50, 0, 0, 10),
                             child: Row(
                               children: [
                                 Container(
                                   padding: EdgeInsets.only(
                                       top: 1, bottom: 1, left: 1, right: 1),
                                   decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
+                                      borderRadius: BorderRadius.circular(1),
                                       color:
-                                          Color.fromARGB(255, 231, 231, 231)),
+                                          Color.fromARGB(255, 255, 255, 255)),
                                   child: Row(
-                                    children: <Widget>[
-                                      Icon(
-                                        Icons.remove,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      ElevatedButton(
+                                        child: Icon(Icons.remove),
+                                        onPressed: () {
+                                          setState(() {
+                                            if (jumlah5 > 0) {
+                                              jumlah5--;
+                                            }
+                                          });
+                                        },
+                                        style: ElevatedButton.styleFrom(
+                                          shape: CircleBorder(),
+                                          padding: EdgeInsets.all(1),
+                                          primary: Color.fromARGB(255, 230, 230,
+                                              230), // <-- Button color
+                                          onPrimary: Color.fromARGB(
+                                              255, 0, 0, 0), // <-- Splash color
+                                        ),
                                       ),
                                       Text(
-                                        '   0   ',
+                                        jumlah5.toString(),
+                                        style: const TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w900,
+                                        ),
                                       ),
-                                      Icon(Icons.add)
+                                      const SizedBox(width: 1),
+                                      ElevatedButton(
+                                        child: Icon(Icons.add),
+                                        onPressed: () {
+                                          setState(() {
+                                            jumlah5++;
+                                          });
+                                        },
+                                        style: ElevatedButton.styleFrom(
+                                          shape: CircleBorder(),
+                                          padding: EdgeInsets.all(1),
+                                          primary: Color.fromARGB(255, 230, 230,
+                                              230), // <-- Button color
+                                          onPrimary: Color.fromARGB(
+                                              255, 0, 0, 0), // <-- Splash color
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 )
@@ -699,25 +888,61 @@ class _BakmieState extends State<Bakmie> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(100, 0, 0, 10),
+                            margin: EdgeInsets.fromLTRB(50, 0, 0, 10),
                             child: Row(
                               children: [
                                 Container(
                                   padding: EdgeInsets.only(
                                       top: 1, bottom: 1, left: 1, right: 1),
                                   decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
+                                      borderRadius: BorderRadius.circular(1),
                                       color:
-                                          Color.fromARGB(255, 231, 231, 231)),
+                                          Color.fromARGB(255, 255, 255, 255)),
                                   child: Row(
-                                    children: <Widget>[
-                                      Icon(
-                                        Icons.remove,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      ElevatedButton(
+                                        child: Icon(Icons.remove),
+                                        onPressed: () {
+                                          setState(() {
+                                            if (jumlah6 > 0) {
+                                              jumlah6--;
+                                            }
+                                          });
+                                        },
+                                        style: ElevatedButton.styleFrom(
+                                          shape: CircleBorder(),
+                                          padding: EdgeInsets.all(1),
+                                          primary: Color.fromARGB(255, 230, 230,
+                                              230), // <-- Button color
+                                          onPrimary: Color.fromARGB(
+                                              255, 0, 0, 0), // <-- Splash color
+                                        ),
                                       ),
                                       Text(
-                                        '   0   ',
+                                        jumlah6.toString(),
+                                        style: const TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w900,
+                                        ),
                                       ),
-                                      Icon(Icons.add)
+                                      const SizedBox(width: 1),
+                                      ElevatedButton(
+                                        child: Icon(Icons.add),
+                                        onPressed: () {
+                                          setState(() {
+                                            jumlah6++;
+                                          });
+                                        },
+                                        style: ElevatedButton.styleFrom(
+                                          shape: CircleBorder(),
+                                          padding: EdgeInsets.all(1),
+                                          primary: Color.fromARGB(255, 230, 230,
+                                              230), // <-- Button color
+                                          onPrimary: Color.fromARGB(
+                                              255, 0, 0, 0), // <-- Splash color
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 )
