@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       width: 100.0,
                       height: 59.0,
-                      alignment: Alignment(4, 27),
+                      alignment: Alignment(5, 27),
                       child: new Image.asset('images/logo.png'),
                     ),
                     Container(

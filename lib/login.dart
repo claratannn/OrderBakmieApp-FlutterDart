@@ -28,8 +28,8 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController passwordController = TextEditingController();
 
   bool _isHidePassword = true;
-  
-  void _togglePasswordVisibility(){
+
+  void _togglePasswordVisibility() {
     setState(() {
       _isHidePassword = !_isHidePassword;
     });
@@ -79,7 +79,6 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-
               Container(
                 // padding: const EdgeInsets.all(10),
                 padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
@@ -99,11 +98,13 @@ class _LoginPageState extends State<LoginPage> {
                       borderSide: BorderSide(),
                     ),
                     suffixIcon: GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         _togglePasswordVisibility();
                       },
                       child: Icon(
-                        _isHidePassword ? Icons.visibility_off : Icons.visibility,
+                        _isHidePassword
+                            ? Icons.visibility_off
+                            : Icons.visibility,
                         color: _isHidePassword ? Colors.grey : Colors.blue,
                       ),
                     ),
@@ -113,7 +114,6 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-
               TextButton(
                   onPressed: () {
                     Navigator.pushReplacement(
@@ -131,8 +131,7 @@ class _LoginPageState extends State<LoginPage> {
                           fontWeight: FontWeight.bold,
                           decoration: TextDecoration.underline,
                         )),
-                  )
-              ),
+                  )),
               Container(
                 height: 50,
                 padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),

@@ -74,7 +74,7 @@ class _MinumanState extends State<Minuman> {
                       Container(
                         width: 100.0,
                         height: 59.0,
-                        alignment: Alignment(4, 27),
+                        alignment: Alignment(5, 27),
                         child: new Image.asset('images/logo.png'),
                       ),
                       Container(
@@ -457,7 +457,7 @@ class _MinumanState extends State<Minuman> {
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Image(
-                            image: AssetImage('images/estehmenu.jpg'),
+                            image: AssetImage('images/esteh.png'),
                             width: 90,
                             height: 108,
                             fit: BoxFit.fill,
@@ -580,7 +580,7 @@ class _MinumanState extends State<Minuman> {
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Image(
-                            image: AssetImage('images/estehmenu.jpg'),
+                            image: AssetImage('images/esteh.png'),
                             width: 90,
                             height: 108,
                             fit: BoxFit.fill,
