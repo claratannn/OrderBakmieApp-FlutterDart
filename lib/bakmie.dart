@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application/checkout.dart';
 import 'package:flutter_application/login.dart';
 import 'package:flutter_application/profile.dart';
 
@@ -487,7 +486,7 @@ class _BakmieState extends State<Bakmie> {
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Image(
-                            image: AssetImage('images/bakmiebc.png'),
+                            image: AssetImage('images/cincang.jpg'),
                             width: 90,
                             height: 90,
                             fit: BoxFit.fill,

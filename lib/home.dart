@@ -401,7 +401,7 @@ class _HomePageState extends State<HomePage> {
                                   Container(
                                     child: Image(
                                       image:
-                                          AssetImage('images/mielebarfav.png'),
+                                          AssetImage('images/mielebarfav.jpg'),
                                       width: 190,
                                     ),
                                   ),
@@ -447,7 +447,7 @@ class _HomePageState extends State<HomePage> {
                               children: <Widget>[
                                 Container(
                                   child: Image(
-                                    image: AssetImage('images/nascamhai.png'),
+                                    image: AssetImage('images/nascamhai.jpg'),
                                     width: 190,
                                   ),
                                 ),
@@ -515,7 +515,7 @@ class _HomePageState extends State<HomePage> {
                                 children: <Widget>[
                                   Container(
                                     child: Image(
-                                      image: AssetImage('images/badak.png'),
+                                      image: AssetImage('images/badak.jpg'),
                                       width: 190,
                                     ),
                                   ),
@@ -561,7 +561,7 @@ class _HomePageState extends State<HomePage> {
                               children: <Widget>[
                                 Container(
                                   child: Image(
-                                    image: AssetImage('images/esteh.png'),
+                                    image: AssetImage('images/esteh.jpg'),
                                     width: 190,
                                   ),
                                 ),
@@ -617,10 +617,7 @@ class _HomePageState extends State<HomePage> {
           ),
       ),
       
-<<<<<<< HEAD
 
-=======
->>>>>>> 84afb0130fc4eafc70c507b416e9089b0db8bff9
     );
   }
 }

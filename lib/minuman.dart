@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/login.dart';
 import 'package:flutter_application/profile.dart';
-import 'checkout.dart';
 
 import 'checkout.dart';
 
