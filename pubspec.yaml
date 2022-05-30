@@ -100,6 +100,7 @@ flutter:
     - images/pangsitg.png
     - images/bakso.png
     - images/nasicampur.png
+    - images/estehmenu.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
