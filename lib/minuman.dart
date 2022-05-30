@@ -32,9 +32,9 @@ class _MinumanState extends State<Minuman> {
         onPressed: () {
           // Add your onPressed code here!
           Navigator.push(
-            context, 
-            MaterialPageRoute(builder: (context) => Checkout(title: 'Bakmie Kim-An'))
-            );
+              context,
+              MaterialPageRoute(
+                  builder: (context) => Checkout(title: 'Bakmie Kim-An')));
         },
         backgroundColor: Colors.green,
         child: const Icon(Icons.shopping_cart),
@@ -377,7 +377,7 @@ class _MinumanState extends State<Minuman> {
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Image(
-                            image: AssetImage('images/esteh.jpg'),
+                            image: AssetImage('images/esteh.png'),
                             width: 90,
                             height: 108,
                             fit: BoxFit.fill,
@@ -464,7 +464,7 @@ class _MinumanState extends State<Minuman> {
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Image(
-                            image: AssetImage('images/esteh.jpg'),
+                            image: AssetImage('images/esteh.png'),
                             width: 90,
                             height: 108,
                             fit: BoxFit.fill,
