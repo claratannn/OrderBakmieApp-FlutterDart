@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/login.dart';
 import 'package:flutter_application/profile.dart';
+import 'checkout.dart';
 
 class Minuman extends StatefulWidget {
   const Minuman({Key? key, required this.title}) : super(key: key);
@@ -26,6 +27,17 @@ class _MinumanState extends State<Minuman> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // Add your onPressed code here!
+          Navigator.push(
+            context, 
+            MaterialPageRoute(builder: (context) => Checkout(title: 'Bakmie Kim-An'))
+            );
+        },
+        backgroundColor: Colors.green,
+        child: const Icon(Icons.shopping_cart),
+      ),
       body: Container(
         decoration: new BoxDecoration(color: Colors.white),
         child: Padding(
@@ -364,7 +376,7 @@ class _MinumanState extends State<Minuman> {
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Image(
-                            image: AssetImage('images/esteh.png'),
+                            image: AssetImage('images/esteh.jpg'),
                             width: 90,
                             height: 108,
                             fit: BoxFit.fill,
@@ -451,7 +463,7 @@ class _MinumanState extends State<Minuman> {
                             borderRadius: BorderRadius.circular(20),
                           ),
                           child: Image(
-                            image: AssetImage('images/esteh.png'),
+                            image: AssetImage('images/esteh.jpg'),
                             width: 90,
                             height: 108,
                             fit: BoxFit.fill,

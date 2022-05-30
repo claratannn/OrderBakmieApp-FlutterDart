@@ -59,17 +59,13 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - images/background.png
     - images/google.png
-    - images/background.jpg
     - images/logo.png
-    - images/sidedish.jpg
-    - images/bakmie.jpg
-    - images/nasi.jpg
-    - images/minum.jpg
-    - images/mielebarfav.jpg
-    - images/nascamhai.jpg
-    - images/badak.jpg
-    - images/esteh.jpg
+    - images/mielebarfav.png
+    - images/nascamhai.png
+    - images/badak.png
+    - images/esteh.png
     - images/GoPay.png
     - images/OVO.png
     - images/Shopee.png
@@ -81,14 +77,8 @@ flutter:
     - images/bakmiebc.png
     - images/pangsit.png
     - images/badak.png
-    - images/badakminum.jpg
-    - images/esjeruk.jpg
-    - images/teh.jpg
     - images/nasiputih.png
-    - images/nasihainan.png
-    - images/cincang.jpg
-    - images/casiu.jpg
-    - images/rica.jpg    
+    - images/nasihainan.png  
     - images/pangsitk.png
     - images/pangsitg.png
     - images/bakso.png

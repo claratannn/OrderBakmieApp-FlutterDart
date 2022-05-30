@@ -401,7 +401,7 @@ class _HomePageState extends State<HomePage> {
                                   Container(
                                     child: Image(
                                       image:
-                                          AssetImage('images/mielebarfav.jpg'),
+                                          AssetImage('images/mielebarfav.png'),
                                       width: 190,
                                     ),
                                   ),
@@ -447,7 +447,7 @@ class _HomePageState extends State<HomePage> {
                               children: <Widget>[
                                 Container(
                                   child: Image(
-                                    image: AssetImage('images/nascamhai.jpg'),
+                                    image: AssetImage('images/nascamhai.png'),
                                     width: 190,
                                   ),
                                 ),
@@ -515,7 +515,7 @@ class _HomePageState extends State<HomePage> {
                                 children: <Widget>[
                                   Container(
                                     child: Image(
-                                      image: AssetImage('images/badak.jpg'),
+                                      image: AssetImage('images/badak.png'),
                                       width: 190,
                                     ),
                                   ),
@@ -561,7 +561,7 @@ class _HomePageState extends State<HomePage> {
                               children: <Widget>[
                                 Container(
                                   child: Image(
-                                    image: AssetImage('images/esteh.jpg'),
+                                    image: AssetImage('images/esteh.png'),
                                     width: 190,
                                   ),
                                 ),
@@ -617,6 +617,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
+      
     );
   }
 }
