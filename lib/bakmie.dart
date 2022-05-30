@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application/login.dart';
 import 'package:flutter_application/profile.dart';
 
+import 'checkout.dart';
+
 class Bakmie extends StatefulWidget {
   const Bakmie({Key? key, required this.title}) : super(key: key);
 
@@ -26,6 +28,17 @@ class _BakmieState extends State<Bakmie> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // Add your onPressed code here!
+          Navigator.push(
+            context, 
+            MaterialPageRoute(builder: (context) => Checkout(title: 'Bakmie Kim-An'))
+            );
+        },
+        backgroundColor: Colors.green,
+        child: const Icon(Icons.shopping_cart),
+      ),
       body: Container(
         decoration: new BoxDecoration(color: Colors.white),
         child: Padding(

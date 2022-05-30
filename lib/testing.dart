@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application/bakmie.dart';
 import 'package:flutter_application/checkout.dart';
-import 'package:flutter_application/join.dart';
-import 'package:flutter_application/login.dart';
-import 'package:flutter_application/minuman.dart';
-import 'package:flutter_application/nasi.dart';
-import 'package:flutter_application/pembayaran.dart';
-import 'package:flutter_application/profile.dart';
-import 'package:flutter_application/sidedish.dart';
-import 'package:flutter_application/testing.dart';
+
+import 'bakmie.dart';
+import 'join.dart';
 import 'login.dart';
+import 'minuman.dart';
+import 'nasi.dart';
+import 'sidedish.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key, required this.title}) : super(key: key);
+class testingPage extends StatefulWidget {
+  const testingPage({Key? key, required this.title}) : super(key: key);
 
-  // This widget is the home page of your application. It is stateful, meaning
+  // This widget is the testing page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
   // how it looks.
 
@@ -26,18 +23,30 @@ class HomePage extends StatefulWidget {
   final String title;
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<testingPage> createState() => _testingPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _testingPageState extends State<testingPage> {
   TextEditingController searchController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+
+        onPressed: (){
+                      Navigator.pushReplacement(
+                          context, 
+                          MaterialPageRoute(
+                            builder: (context) => LoginPage(title: 'Bakmie Kim-An',)
+                          )
+                        );
+                    },
+                    child: Icon(Icons.shopping_bag),
+      ),
       body: Container(
-          padding: const EdgeInsets.fromLTRB(30, 43, 30, 36),
-          decoration: new BoxDecoration(color: Colors.white),
+        padding: const EdgeInsets.fromLTRB(30, 43, 30, 36),
+        decoration: new BoxDecoration(color: Colors.white),
           child: ListView(
             physics: ClampingScrollPhysics(),
             children: <Widget>[
@@ -71,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                               onTap: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Profile(
+                                    builder: (context) => testingPage(
                                           title: 'Bakmie Kim-An2',
                                         )),
                               ),
@@ -615,8 +624,8 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
+          
       ),
-      
 
     );
   }
