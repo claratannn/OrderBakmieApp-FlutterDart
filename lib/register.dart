@@ -35,7 +35,7 @@ class _RegisterState extends State<Register> {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/background.jpg'),
+            image: AssetImage('images/background.png'),
             fit: BoxFit.cover),
         ),
         child: Padding(

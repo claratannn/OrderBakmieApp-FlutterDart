@@ -31,7 +31,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/background.jpg'),
+            image: AssetImage('images/background.png'),
             fit: BoxFit.cover),
         ),
         child: Padding(
